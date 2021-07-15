@@ -58,7 +58,7 @@ router.post('/login', async (req, res) => {
             email: req.body.email
         })
 
-        const validationFailedMessage = 'Incorect username or password 😢'
+        const validationFailedMessage = 'Incorrect username or password 😢'
 
         // if user found -- return immediately
         if(!findUser) return res.status(400).json({ msg: validationFailedMessage })
